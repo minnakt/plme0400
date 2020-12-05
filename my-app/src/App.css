@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  color: #fafafa;
+}
+
+.main-figure {
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #fa4f34;
+  opacity: 70%;
+  border-radius: 50%;
+}
+
+.dot:hover {
+  box-shadow: 0 0 8px #fa4f34;
+  cursor: pointer;
+}
+
+.eye-dot {
+  position: fixed;
+  top: 17%;
+  left: 40.5%;
+}
+
+.neck-dot {
+  position: fixed;
+  top: 25%;
+  left: 34.5%;
+}
+
+.wrist-dot {
+  position: fixed;
+  top: 45%;
+  left: 51%;
+}
+
+.back-dot {
+  position: fixed;
+  top: 35%;
+  left: 33%;
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
