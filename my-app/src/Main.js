@@ -13,7 +13,10 @@ class Main extends React.Component {
   }
 
   changeInfo = (part) => {
-      this.setState({info: part})
+      // I only want to refresh it if it's different from the previous. 
+      if (part !== this.state.info) {
+        this.setState({info: part})
+      }
   }
 
   render() {
@@ -23,10 +26,10 @@ class Main extends React.Component {
         <div className="main-wrapper">
             <div className="main-figure">
                 <img src={main} width="100%" alt="Main figure"></img>
-                <div className="dot eye-dot"></div>
-                <div className="dot neck-dot"></div>
+                <div className="dot eye-dot" onClick={() => this.changeInfo("eye")}></div>
+                <div className="dot neck-dot" onClick={() => this.changeInfo("neck")}></div>
                 <div className="dot wrist-dot" onClick={() => this.changeInfo("wrist")}></div>
-                <div className="dot back-dot"></div> 
+                <div className="dot back-dot" onClick={() => this.changeInfo("back")}></div> 
             </div>
 
             <div className="info-display">
