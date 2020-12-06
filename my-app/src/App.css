@@ -53,8 +53,7 @@ img {
 .dot {
   height: 25px;
   width: 25px;
-  background-color: #fa4f34;
-  opacity: 70%;
+  background-color:rgba(250, 79, 52,0.7);
   border-radius: 50%;
 }
 
