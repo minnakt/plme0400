@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
+
 .App {
-  text-align: center;
-  color: #fafafa;
+  /* text-align: center; */
+  background-color: #fafafa;
+  font-family: 'Quattrocento Sans';
+  min-height: 100vh;
+
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
+}
+
+/* ----------------- DIAGRAM ------------- */
+.main-wrapper {
+  min-height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .main-figure {
-  margin: 0 auto;
-  margin-top: 60px;
+  width: 80%;
   position: relative;
+}
+
+img {
+  flex-shrink: 0;
 }
 
 .dot {
@@ -23,43 +42,136 @@
 }
 
 .eye-dot {
-  position: fixed;
-  top: 17%;
-  left: 40.5%;
+  position: absolute;
+  top: 12%;
+  /* left: 40.5%; */
+  left: 31.5%
 }
 
 .neck-dot {
-  position: fixed;
-  top: 25%;
-  left: 34.5%;
+  position: absolute;
+  top: 21%;
+  /* left: 34.5%; */
+  left: 21%;
 }
 
 .wrist-dot {
-  position: fixed;
+  position: absolute;
   top: 45%;
-  left: 51%;
+  /* left: 51%; */
+  left: 52%;
 }
 
 .back-dot {
-  position: fixed;
+  position: absolute;
   top: 35%;
-  left: 33%;
+  /* left: 33%; */
+  left: 19%;
 }
 
 
+/* ------------------------------ INFO CONTENT ------------------------------ */
+.info-panel-wrapper {
+  min-height: 80vh;
+  width: 650px;
+}
+
+.info-panel {
+  padding: 10px 60px;
+
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
+}
+
+.info-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info-content {
+  line-height: 1.4;
+}
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ----------------- FADE IN ANIMATION ------------- */
+@keyframes fadein {
+  from { opacity:0;}
+  to { opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+  from { opacity:0; }
+  to { opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+
+/* --------------------------- POPUP ------------------------------- */
+.popup-writing {
+  padding: 10px 0px;
+}
+
+.modal-header {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 8px 0px;
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  border-radius: 3px;
+  padding: 40px;
+  font-family: 'Quattrocento Sans';
+
+  position:relative;
+}
+
+.popup-header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.x {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.x:hover {
+  cursor: pointer;
+  color: #ff3729;
+}
+
+@keyframes anvil {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  1% {
+    transform: scale(0.96) translateY(10px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popup-content {
+  -webkit-animation: anvil 0.2s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
 }
