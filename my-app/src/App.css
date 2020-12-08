@@ -55,6 +55,7 @@ img {
   width: 25px;
   background-color:rgba(250, 79, 52,0.7);
   border-radius: 50%;
+  transition: .2s ease-in-out;
 }
 
 .dot:hover {
@@ -117,7 +118,11 @@ img {
 .info-header {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.info-header p {
+  margin: 0;
 }
 
 .info-content {

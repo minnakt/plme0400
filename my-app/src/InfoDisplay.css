@@ -19,9 +19,28 @@
     margin-left: 20px;
     margin-right: 20px; */
 }
+.instructions-box {
+    color: grey;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+
+.instructions-box p {
+    margin: 0;
+}
 
 .standalone-img-box {
     text-align: center;
+}
+
+.info-author p {
+    margin: 0;
+    font-style: italic;
+    color: grey;
+}
+
+.info-author {
+    margin-bottom: 30px;
 }
 
 /* --------------- Wrist ---------------*/

@@ -5,7 +5,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 import backGood from './images/back_good_posture.png';
-import backBad from './images/back_good_posture.png';
+import backBad from './images/back_bad_posture.png';
 import backStretch from './images/back_stretch.png';
 
 
@@ -13,7 +13,13 @@ function BackInfo() {
   return (
     <div className="back">
         <p>
-        Blurb
+        Back pain is one of the most common complaints and injuries people have. 
+        It can make the simplest of movements, like bending down to pick up a pencil on the floor, painful. 
+        Poor posture is one of the common reasons behind back pain, so keeping good posture is very important for the long term. 
+
+        <br/> <br/>
+        
+        Stretches and standing up to take walks around help alleviate the strain and tension on your back, so make sure to take breaks!
 
         </p>
 

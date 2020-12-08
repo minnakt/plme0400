@@ -11,6 +11,10 @@ import mouseGood from './images/mouse_good_posture_wrist.png';
 import mouseBad from './images/mouse_bad_posture_wrist.png';
 import wristStretches from './images/wrist_stretches.png';
 
+import wristStretch1 from './images/wrist_stretch_1.png';
+import wristStretch2 from './images/wrist_stretch_2.png';
+import wristStretch3 from './images/wrist_stretch_3.png';
+
 function WristInfo() {
   return (
     <div className="wrist">
@@ -77,8 +81,24 @@ function WristInfo() {
             for 15-30 seconds. 
         </p>
 
-        <div className="standalone-img-box">
-            <img src={wristStretches} width="600px"></img>
+        <div className="wrist-posture">
+            <div className="wrist-mouse-posture-bad">
+                <img src={wristStretch1} width="200px"></img>  
+                <div className="captions-box"> <p> Hold your hand out upwards, wrap your other hand around it, and pull towards you. </p>
+                    </div>
+            </div>
+
+            <div className="wrist-mouse-posture-good">
+                <img src={wristStretch2} width="200px"></img>
+                <div className="captions-box">  <p> Hold your hand out downwards, wrap your other hand around it, and pull towards you. </p>
+                    </div>
+            </div>
+
+            <div className="wrist-mouse-posture-good">
+                <img src={wristStretch3} width="200px"></img>
+                <div className="captions-box">  <p> Hold your hand out upside down with your palm facing outwards, wrap your other hand around it, and pull towards you. </p>
+                    </div>
+            </div>
         </div>
 
         <p>

@@ -28,23 +28,28 @@ class InfoDisplay extends React.Component {
     render() {
         let headerText;
         let contentText;
+        let author = "";
 
         switch(this.props.info) {
             case 'wrist':
                 headerText = <p>Let's Learn about the Wrists!</p>
                 contentText = <WristInfo/>
+                author= <p> Illustrated by Minna Kimura-Thollander </p>
                 break;
             case 'neck':
                 headerText = <p>Let's Learn about the Neck!</p>
                 contentText = <NeckInfo/>
+                author= <p> Illustrated by Tori Cook </p>
                 break;
             case 'eye':
                 headerText = <p>Let's Learn about the Eyes!</p>
                 contentText = <EyeInfo/>
+                author= <p> Illustrated by Alexandra Burgess</p>
                 break;
             case 'back':
                 headerText = <p>Let's Learn about the Back!</p>
                 contentText = <BackInfo />
+                author= <p> Illustrated by Joseph Namkung </p>
                 break;
             default:
                 headerText = <p>Welcome to our final project for PLME0400.</p>
@@ -62,6 +67,7 @@ class InfoDisplay extends React.Component {
             <div key={this.props.info} className={`info-panel-wrapper ${this.state.toggler ? 'refresh':'refreshAlt'}`}>
                 <div className="info-panel">
                     <div className="info-header"> {headerText} </div>
+                    <div className="info-author"> {author} </div>
                     < div className="info-content"> {contentText} </div>
                 </div>
             </div>
