@@ -48,12 +48,12 @@ class InfoDisplay extends React.Component {
                 break;
             default:
                 headerText = <p>Welcome to our final project for PLME0400.</p>
-                contentText = <p>In this project, we wanted to raise awareness for remote 
+                contentText = <p>   In this project, we wanted to raise awareness for remote 
                                     injuries that have become more common in the era of COVID-19.
 
                                     <br/><br/>
                                     Click any of the highlighted body parts of the figure to learn more about
-                                    how you to properly treat it!
+                                    how to properly treat it!
 
                                 </p>
         }
