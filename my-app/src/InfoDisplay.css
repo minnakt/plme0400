@@ -1,3 +1,4 @@
+/* Miscellaneous things used for info pages (may delete later)*/
 .labels {
     display: flex;
     justify-content: space-around;
@@ -11,21 +12,46 @@
 }
 
 .captions-box {
-    width: 200px;
+    color: grey;
+    font-size: 14px;
+    padding: 15px;
+    /* width: 200px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
 }
 
+.standalone-img-box {
+    text-align: center;
+}
+
+/* --------------- Wrist ---------------*/
 .keyboard, .mouse {
     display: flex;
     justify-content: center;
 }
 
+/* --------------- Neck --------------- */
 .neck-posture {
     display: flex;
     justify-content: center;
 }
 
-.standalone-img-box {
-    text-align: center;
+.neck-posture-good, .neck-posture-bad {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------------- Back --------------- */
+.back-posture {
+    display: flex;
+    justify-content: center;
+}
+
+.back-posture-good, .back-posture-bad {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

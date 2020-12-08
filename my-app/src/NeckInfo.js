@@ -28,20 +28,19 @@ function NeckInfo() {
         </p>
 
         <div className="neck-posture">
-            <img src={neckBad} width="200px"></img>   
-            <img src={neckGood} width="200px"></img>
-        </div>
+            <div className="neck-posture-good">
+                <img src={neckBad} width="200px"></img>   
+                <FontAwesomeIcon className = "times-wrist" size={"lg"} icon={faTimesCircle} color="#FF3838"/>
+                <div className="captions-box"> <p> Bad posture: The neck is tilted forward and down at the phone </p>
+                    </div>
+            </div>
 
-        <div className="labels">
-            <FontAwesomeIcon className = "times-wrist" size={"lg"} icon={faTimesCircle} color="#FF3838"/>
-            <FontAwesomeIcon className = "check-wrist" size={"lg"} icon={faCheckCircle} color="#7BEC22"/>
-        </div>
-
-        <div className="captions">
-            <div className="captions-box"> <p> Bad posture: The neck is tilted forward and down at the phone </p>
-                </div>
-            <div className="captions-box">  <p> Good posture: The phone is raised to eye level so that we can keep our necks align. </p>
-                </div>
+            <div className="neck-posture-bad">
+                <img src={neckGood} width="200px"></img>
+                <FontAwesomeIcon className = "check-wrist" size={"lg"} icon={faCheckCircle} color="#7BEC22"/>
+                <div className="captions-box">  <p> Good posture: The phone is raised to eye level so that we can keep our necks align. </p>
+                    </div>
+            </div>
         </div>
 
         <p>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import WristInfo from './WristInfo.js';
 import NeckInfo from './NeckInfo.js';
+import BackInfo from './BackInfo.js';
 
 
 class InfoDisplay extends React.Component {
@@ -29,7 +30,7 @@ class InfoDisplay extends React.Component {
 
         switch(this.props.info) {
             case 'wrist':
-                headerText = <p>Wrist Injuries</p>
+                headerText = <p>Let's Learn about the Wrist!</p>
                 contentText = <WristInfo/>
                 break;
             case 'neck':
@@ -37,16 +38,14 @@ class InfoDisplay extends React.Component {
                 contentText = <NeckInfo/>
                 break;
             case 'eye':
-                headerText = <p>Eye Injuries</p>
+                headerText = <p>Let's Learn about the Eyes!</p>
                 contentText = 
                 <div>
                 </div>
                 break;
             case 'back':
-                headerText = <p>Back Injuries</p>
-                contentText = 
-                <div>
-                </div>
+                headerText = <p>Let's Learn about the Back!</p>
+                contentText = <BackInfo />
                 break;
             default:
                 headerText = <p>Welcome to our final project for PLME0400.</p>
