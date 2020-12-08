@@ -1,8 +1,8 @@
 import React from 'react';
 
-import wristHurt from './images/generic_hurt_wrist.png';
-import keyboardMouse from './images/keyboard_mouse_wrist.png';
-import wristStretches from './images/wrist_stretches.png';
+import WristInfo from './WristInfo.js';
+import NeckInfo from './NeckInfo.js';
+
 
 class InfoDisplay extends React.Component {
 
@@ -27,41 +27,14 @@ class InfoDisplay extends React.Component {
         let headerText;
         let contentText;
 
-
         switch(this.props.info) {
             case 'wrist':
                 headerText = <p>Wrist Injuries</p>
-                contentText = 
-                <div>
-                    <p>
-                        Wrist injuries are common among people who work with computers. According to a 2008
-                        report by the United States Bureau of Labor Statistics, 6 out of 10 workers who use a computer
-                        have experienced wrist pain. As we spend more time inside due to the coronavirus epidemic and we
-                        are more dependent on computers, anyone from young children to professional office workers are at 
-                        risk for wrist injuries. 
-                    </p>
-                    <img src={wristHurt} width="300px"></img>
-
-                    <p>
-                        The easiest way to avoid wrist injury is to make sure that you are using you have the correct wrist
-                        position when using your keyboard and mouse. blahblah
-                    </p>
-                
-                    <img src={keyboardMouse} width="500px"></img>
-
-                    <p>
-                        If you've been feeling pain in your wrists, wrist stretches can help! Follow the images below
-                        to relieve strain in your wrists. blah blah blah
-                    </p>
-
-                    <img src={wristStretches} width="550px"></img>
-                </div>
+                contentText = <WristInfo/>
                 break;
             case 'neck':
-                headerText = <p>Neck Injuries</p>
-                contentText = 
-                <div>
-                </div>
+                headerText = <p>Let's Learn about the Neck!</p>
+                contentText = <NeckInfo/>
                 break;
             case 'eye':
                 headerText = <p>Eye Injuries</p>

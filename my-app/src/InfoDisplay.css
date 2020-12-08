@@ -1,0 +1,31 @@
+.labels {
+    display: flex;
+    justify-content: space-around;
+}
+
+.captions {
+    display: flex;
+    font-size: 14px;
+    color: grey;
+    justify-content: center;
+}
+
+.captions-box {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.keyboard, .mouse {
+    display: flex;
+    justify-content: center;
+}
+
+.neck-posture {
+    display: flex;
+    justify-content: center;
+}
+
+.standalone-img-box {
+    text-align: center;
+}
