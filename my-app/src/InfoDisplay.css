@@ -55,3 +55,29 @@
     flex-direction: column;
     align-items: center;
 }
+
+/* --------------- wrist --------------- */
+.wrist-posture {
+    display: flex;
+    justify-content: center;
+}
+
+.wrist-keyboard-posture-good, .wrist-keyboard-posture-bad,.wrist-mouse-posture-good, .wrist-mouse-posture-bad {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------------- eye --------------- */
+.eye-posture {
+    display: flex;
+    justify-content: center;
+}
+
+.eye-posture-good, .eye-posture-bad {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

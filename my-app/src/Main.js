@@ -20,20 +20,20 @@ class Main extends React.Component {
   }
 
   render() {
-    let displayInfo = <InfoDisplay info={this.state.info}/>
+    // className={`info-panel-wrapper ${this.state.toggler ? 'refresh':'refreshAlt'}`}
 
     return (
         <div className="main-wrapper">
             <div className="main-figure">
                 <img src={main} width="100%" alt="Main figure"></img>
-                <div className="dot eye-dot" onClick={() => this.changeInfo("eye")}></div>
-                <div className="dot neck-dot" onClick={() => this.changeInfo("neck")}></div>
-                <div className="dot wrist-dot" onClick={() => this.changeInfo("wrist")}></div>
-                <div className="dot back-dot" onClick={() => this.changeInfo("back")}></div> 
+                <div className={`dot eye-dot ${this.state.info==="eye" ? 'focused':''}`} onClick={() => this.changeInfo("eye")}> </div>
+                <div className={`dot neck-dot ${this.state.info==="neck" ? 'focused':''}`} onClick={() => this.changeInfo("neck")}></div>
+                <div className={`dot wrist-dot ${this.state.info==="wrist" ? 'focused':''}`} onClick={() => this.changeInfo("wrist")}></div>
+                <div className={`dot back-dot ${this.state.info==="back" ? 'focused':''}`} onClick={() => this.changeInfo("back")}></div> 
             </div>
 
             <div className="info-display">
-                {displayInfo}
+                <InfoDisplay info={this.state.info}/>
             </div>
         </div>
     );

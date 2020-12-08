@@ -28,14 +28,14 @@ function NeckInfo() {
         </p>
 
         <div className="neck-posture">
-            <div className="neck-posture-good">
+            <div className="neck-posture-bad">
                 <img src={neckBad} width="200px"></img>   
                 <FontAwesomeIcon className = "times-wrist" size={"lg"} icon={faTimesCircle} color="#FF3838"/>
                 <div className="captions-box"> <p> Bad posture: The neck is tilted forward and down at the phone </p>
                     </div>
             </div>
 
-            <div className="neck-posture-bad">
+            <div className="neck-posture-good">
                 <img src={neckGood} width="200px"></img>
                 <FontAwesomeIcon className = "check-wrist" size={"lg"} icon={faCheckCircle} color="#7BEC22"/>
                 <div className="captions-box">  <p> Good posture: The phone is raised to eye level so that we can keep our necks align. </p>

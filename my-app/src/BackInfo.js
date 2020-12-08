@@ -11,21 +11,21 @@ import backStretch from './images/back_stretch.png';
 
 function BackInfo() {
   return (
-    <div className="neck">
+    <div className="back">
         <p>
         Blurb
 
         </p>
 
         <div className="back-posture">
-            <div className="back-posture-good">
+            <div className="back-posture-bad">
                 <img src={backBad} width="300px"></img>   
                 <FontAwesomeIcon className = "times-wrist" size={"lg"} icon={faTimesCircle} color="#FF3838"/>
                 <div className="captions-box"> <p> Bad posture: Slouching forward too much or leaning too far back can create problems. </p>
                     </div>
             </div>
 
-            <div className="back-posture-bad">
+            <div className="back-posture-good">
                 <img src={backGood} width="300px"></img>
                 <FontAwesomeIcon className = "check-wrist" size={"lg"} icon={faCheckCircle} color="#7BEC22"/>
                 <div className="captions-box">  <p> Good posture: Sit up with your back straight and your shoulders back. Keep your feet flat on the 

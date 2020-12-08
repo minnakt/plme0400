@@ -59,7 +59,15 @@ img {
 
 .dot:hover {
   box-shadow: 3 3 15px #fa4f34;
+  background-image: radial-gradient(circle, red 20%, transparent 20%, transparent);
+  transform: scale(1.5);
+  transition: .2s ease-in-out;
   cursor: pointer;
+}
+
+.focused {
+  background-image: radial-gradient(circle, red 20%, transparent 20%, transparent);
+  transform: scale(1.5);
 }
 
 .eye-dot {
